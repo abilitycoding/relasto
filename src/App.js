@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from "react-router-dom";
+import Home from "./Components/Pages/Home";
+import About from "./Components/Pages/About";
+import Contact from "./Components/Pages/Contact";
+import RelastoNavbar from "./Components/Common/RelastoNavbar";
+import Agent from "./Components/Pages/Agent";
+import Blog from "./Components/Pages/Blog";
+import Listing from "./Components/Pages/Listing";
+import Property from "./Components/Pages/Property";
+import Login from "./Components/Pages/Login";
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <RelastoNavbar/>
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/agent" element={<Agent />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/listing" element={<Listing />} />
+          <Route path="/property" element={<Property />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,141 @@
+.section1 {
+  background-color: rgb(255 247 240);
+}
+
+.bsrbtn {
+  padding: 0px 30px !important;
+}
+
+@media screen and (min-width: 768px) {
+  /* CSS rules for screens smaller than 768px */
+  .bsrbtn {
+    padding: 0px 30px !important;
+  }
+  .section2-col1 {
+    min-width: 524px !important;
+    max-width: 524px !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* CSS rules for screens smaller than 768px */
+  .bsrbtn {
+    padding: 0px 50px !important;
+  }
+}
+
+.section2col1 {
+  background-color: rgb(255 224 206) !important;
+}
+
+.sec2col2 {
+  background-color: rgb(251 238 230) !important;
+  min-width: 250px !important;
+  max-width: 250px !important;
+}
+
+@media screen and (max-width: 992px) {
+  /* CSS rules for screens smaller than 768px */
+  .section2col2 {
+    padding: 50px 0px !important;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  /* CSS rules for screens smaller than 512px */
+  .sec2col2 {
+    background-color: rgb(251 238 230) !important;
+    min-width: 155px !important;
+    max-width: 155px !important;
+  }
+  .section2h2 {
+    font-size: 15px !important;
+  }
+}
+
+/* Example: Change font size on medium-sized screens */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .sec2col2 {
+    background-color: rgb(251 238 230) !important;
+   /*  min-width: auto !important;
+    max-width: auto !important; */
+  }
+  .section2h2 {
+    font-size: 25px !important;
+  }
+  .section2col1 {
+    min-width: 400px !important;
+    max-width: 400px !important;
+    max-height: 328px !important;
+    max-height: 328px !important;
+  }
+  .section2col2 {
+    min-width: 400px !important;
+    max-width: 400px !important;
+    max-height: 328px !important;
+    max-height: 328px !important;
+  }
+  .sec2col2 {
+    background-color: rgb(251 238 230) !important;
+    min-width: 200px !important;
+    max-width: 200px !important;
+    max-height: 150px !important;
+    max-height: 150px !important;
+  }
+  .section2h1 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  /* CSS rules for screens smaller than 768px */
+  .section2col1 {
+    min-width: 524px !important;
+    max-width: 524px !important;
+    max-height: 328px !important;
+    max-height: 328px !important;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  /* CSS rules for screens smaller than 768px */
+  .section2col1 {
+    min-width: 334px !important;
+    max-width: 334px !important;
+    max-height: 328px !important;
+    max-height: 328px !important;
+    margin-bottom: 20px;
+  }
+  .section2h1 {
+    font-size: 20px;
+  }
+
+  .bsrbtn {
+    padding: 5px 30px !important;
+  }
+}
+
+@media screen and (min-width: 512px) {
+  .bsrbtn {
+    padding: 15px 50px !important;
+  }
+}
+@media screen and (max-width: 512px) {
+  .bsrbtn {
+    padding: 10px 30px !important;
+  }
+}
+
+/* Example: Change font size on medium-sized screens */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .bsrbtn {
+    padding: 15px 30px !important;
+  }
+}
+
+.location-icon {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
